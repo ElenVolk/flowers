@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+ 
+}
+
+body
+{
+    background-color: #ffebeb;
+ margin: auto;
+    color: #AE7C78;
+}
+
+.main-header p
+{
+    color: #AE7C78;
+    font-size: 24px;
+}
+.main-header nav
+{
+padding: 10px 20px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+border-bottom: 1px solid #AE7C78;
+border-top: 1px solid #AE7C78;
+margin-top: 25px;
+}
+
+.main-header nav a
+{
+    color: #AE7C78;
+text-decoration: none;
+display: block;
+padding: 0 10px 0 10px;
+}
+
+.main-header img.logo
+{width: 100;}
+
+.main-header h1
+{
+color: #AE7C78; 
+font-family: 'Playfair Display';
+font-size: 44px;
+font-weight: normal;
+margin-top: 0;
+}
+
+.main-header h1 span {font-style: italic;}
+
+.button {
+    background-color: #D89999;
+    color: #fff;
+    border-radius: 40px;
+    text-decoration: none;
+margin-top: 50px;
+display: inline-flex;
+justify-content: center;
+align-items: center;
+
+width: 242px;
+height: 80px;
+text-align: center;
+}
+
+.header-intro {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin: auto;
+    height: 440px;
+    margin-top: 70px;
+    align-items: flex-start;
+    aborder: 1px solid black;
+}
+.header-intro img:nth-child(2) {
+   align-self: end;
+}
+.header-intro img {
+    width: 380px;
+    height: 400px;
+    display: block;
+    background-color: #AE7C78;
+    border-radius: 10px;
+}
+
+.header-info   {
+    display: flex;
+      width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    justify-content: space-between;
+    }
+
+    .header-info div {
+font-size: 16px;
+padding: 0 20px;
+width: 25%;
+    }
+    .header-info div p {font-size: 16px;}
+
+    .header-info h6 {font-size: 16px; margin-bottom: 0;}
+    }
+
+  /*MAIN кнопка прописана в хедере*/
+ section .popular {margin: auto;}
+ .popular h2 {text-align: center;} 
+.popular-flex {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+.slider {
+    height: 442px;
+    background: #AE7C78;
+}
+
+
