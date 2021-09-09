@@ -3,7 +3,7 @@
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
 
-section h2 {font-family: 'Playfair Display', 'Times New Roman', Times, serif;}
+section h2 {font-family: 'Playfair Display', 'Times New Roman', Times, serif; margin-bottom: 40px;}
 body
 {
     background-color: #fffefe;
@@ -111,11 +111,15 @@ width: 25%;
     margin: auto;
     justify-content: center;
 }
-
+/* SLIDER */
 .slider {
     height: 442px;
-    background: #AE7C78;
+   display: flex; justify-content: center;  width: 80%; margin: auto; gap: 20px;
 }
+.slider div {flex-basis: 25%; background: #AE7C78;  }
+.slider div:nth-of-type(1) {background: url("files/1.png") no-repeat; background-size: contain;}
+.slider div:nth-of-type(2) {background: url("files/2.png") no-repeat; background-size: contain;}
+.slider div:nth-of-type(3) {background: url("files/3.png") no-repeat; background-size: contain;}
 
 .popular h2 {
     font-size: 24px;
@@ -136,20 +140,34 @@ width: 25%;
 
 .discount {width: 1200px; margin: auto; }
 .discount-flex {background: #AE7C78; display: flex; color: #fff;  justify-content: space-between; margin: auto; margin-top: 100px;}
-.discount h2 {font-weight: normal; font-weight: 44px;}
+.discount h2 {font-weight: normal; font-size: 44px;}
 .discount img {flex-basis: 50%; margin-left: 50px; display: block;}
 .discount-flex div:first-child {padding-left: 100px;  width: 50%;}
 
-.steps {margin: auto; width: 80%; margin-top: 100px;}
+/* STEPS */
+.steps {margin: auto; width: 80%; margin-bottom: 100px; margin-top: 100px;}
 .steps h2 {text-align: center;}
 .steps-flex {display: flex;}
-.steps-flex div {text-align: center; padding: 0 30px; margin-left: 10px; margin-right: 10px;}
+.steps-flex div {text-align: center; padding: 0 30px; margin-left: 10px; margin-right: 10px; padding-top: 40px; }
+.steps-flex div:nth-of-type(1) {background: url("img/Group.png") no-repeat; background-position: top center;}
+.steps-flex div:nth-of-type(2) {background: url("img/Group\(1\).png") no-repeat; background-position: top center;}
+.steps-flex div:nth-of-type(3) {background: url("img/Group\(2\).png") no-repeat; background-position: top center;}
+.steps-flex div:nth-of-type(4) {background: url("img/Group\ 8.png") no-repeat; background-position: top center;}
 
-.news {display: flex; justify-content: center; width: 80%; margin: auto;}
-.news-img {display: flex; flex-direction: column; justify-content: space-between;}
+.news {display: grid; width: 80%; margin: auto; grid-gap: 20px;
+    grid-template: auto 100px 385px; 
+ grid-template-areas: "a b d"
+                      "a c d";
+}
+.news div {grid-area: a; justify-self: end; }
+.news img:nth-of-type(1) {grid-area: b; justify-self: end;  }
+.news img:nth-of-type(2) {grid-area: c; justify-self: end; }
+.news img:nth-of-type(3) { grid-area: d; justify-self: start;  }
+
+/*.news-img {display: flex; flex-direction: column; justify-content: space-between;}
 
 .news > div, .news > img {margin-left: 20px;}
-.news div:first-child {margin-right: 100px;}
+.news div:first-child {margin-right: 100px;}*/
 .news h2 {font-size: 36px;}
 
 .feedback {border: 1px solid #AE7C78; width: 80%; margin: auto; text-align: center; margin-top: 100px; padding: 20px 20px 40px;}
